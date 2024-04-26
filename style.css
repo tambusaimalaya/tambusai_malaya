@@ -104,16 +104,17 @@ a {
 	max-width: 500px;
 }
 .parallax {
-	background-image: url('assets/foto/banner-telkomsel.jpg');
+	background-image: url('assets/foto/tm.jpg');
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 320vh;
+	height: 300vh;
 	
 }
 
 .tentang {
+	text-align: justify;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -172,7 +173,7 @@ footer {
 
 @media screen and (max-width: 500px) {
 	.parallax {
-		height: 650vh;
+		height: 550vh;
 		
 	}
 
