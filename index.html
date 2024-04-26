@@ -1,200 +1,222 @@
-<html>
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	scroll-behavior: smooth;
+}
 
-<head>
-	<!-- untuk mengatur tulisan tdk kecil -->
-	<meta charset="utf-8" />
-	<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!-- nama web -->
-	<title>Tambusai Malaya</title>
-	<link rel="stylesheet" href="style.css" />
-</head>
+header {
+	background: #1A2238;
+	color: #eaeaea;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
 
-<body>
-	<!-- navbar -->
-	<header>
-		<!-- logo -->
-		<div class="logo">
-			<img src="assets/icon/partner.png" alt="logo" class="logo-img" />
-			<h1 class="logo-title">Tambusai Malaya</h1>
-		</div>
-		<!-- jenis voucher -->
-		<nav>
-			<ul>
-				<li><a href="#XL">XL</a></li>
-				<li><a href="#Axis">Axis</a></li>
-				<li><a href="#Im3">Im3</a></li>
-				<li><a href="#Tri">Tri</a></li>
-				<li><a href="#Smartfren">Smartfren</a></li>
-				<li><a href="#Telkomsel">Telkomsel</a></li>
-			</ul>
-		</nav>
-		<button class="btn-cta" onclick="redirWhatsapp()">Beli Voucher</button>
-	</header>
-	<div class="container">
-		<div class="intro">
-			<p class="title">Voucher Internet</p>
-			<img src="assets/foto/banner-telkomsel.jpg" alt="dea afrizal foto 1" class="img-foto" />
-		</div>
-	</div>
-	<div class="parallax">
-		<div class="tentang">
-			<p class="title">Cara Pemesanan</p>
-			<p class="description">Silahkan Klik Cara Pemesanan</p>
-			<div class="mt-10">
-				<button class="btn-cta" onclick="redirCarapesan()">Cara Pemesanan</button>
-			</div>
-		</div>
-		<!-- XL -->
-		<div class="container">
-			<div class="card" id="XL">
-				<div class="card-item">
-					<img src="assets/icon/xl.png" alt="icon 1" class="icon" />
-					<p class="card-title">3,5 GB || 7 hari</p>
-					<p class="card-description">Rp15.000</p>
-				</div>
-				<div class="card-item">
-					<img src="assets/icon/xl.png" alt="icon 1" class="icon" />
-					<p class="card-title">5,5 GB || 7 hari</p>
-					<p class="card-description">Rp19.000</p>
-				</div>
-				<div class="card-item">
-					<img src="assets/icon/xl.png" alt="icon 1" class="icon" />
-					<p class="card-title">9 GB || 7 hari</p>
-					<p class="card-description">Rp25.000</p>
-				</div>
-			</div>
-			<!-- Axis -->
-			<div class="container">
-				<div class="card" id="Axis">
-					<div class="card-item">
-						<img src="assets/icon/axis.png" alt="icon 1" class="icon" />
-						<p class="card-title">3 GB || 3 hari</p>
-						<p class="card-description">Rp11.000</p>
-					</div>
-					<div class="card-item">
-						<img src="assets/icon/axis.png" alt="icon 1" class="icon" />
-						<p class="card-title">2,5 GB || 5 hari</p>
-						<p class="card-description">Rp12.000</p>
-					</div>
-					<div class="card-item">
-						<img src="assets/icon/axis.png" alt="icon 1" class="icon" />
-						<p class="card-title">4 GB || 5 hari</p>
-						<p class="card-description">Rp16.000</p>
-					</div>
-					<div class="card-item">
-						<img src="assets/icon/axis.png" alt="icon 1" class="icon" />
-						<p class="card-title">8 GB || 3 hari</p>
-						<p class="card-description">Rp16.000</p>
-					</div>
-					<div class="card-item">
-						<img src="assets/icon/axis.png" alt="icon 1" class="icon" />
-						<p class="card-title">15 GB || 15 hari</p>
-						<p class="card-description">Rp22.000</p>
-					</div>
-					<div class="card-item">
-						<img src="assets/icon/axis.png" alt="icon 1" class="icon" />
-						<p class="card-title">7 GB || 7 hari</p>
-						<p class="card-description">Rp22.000</p>
-					</div>
-				</div>
-				<!-- iM3 -->
-				<div class="container">
-					<div class="card" id="Im3">
-						<div class="card-item">
-							<img src="assets/icon/im3.png" alt="icon 1" class="icon" />
-							<p class="card-title">Voucher XL</p>
-							<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-						</div>
-						<div class="card-item">
-							<img src="assets/icon/im3.png" alt="icon 1" class="icon" />
-							<p class="card-title">Voucher XL</p>
-							<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-						</div>
-						<div class="card-item">
-							<img src="assets/icon/im3.png" alt="icon 1" class="icon" />
-							<p class="card-title">Voucher XL</p>
-							<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-						</div>
-					</div>
-					<!-- Tri -->
-					<div class="container">
-						<div class="card" id="Tri">
-							<div class="card-item">
-								<img src="assets/icon/tri.png" alt="icon 1" class="icon" />
-								<p class="card-title">Voucher XL</p>
-								<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-							</div>
-							<div class="card-item">
-								<img src="assets/icon/tri.png" alt="icon 1" class="icon" />
-								<p class="card-title">Voucher XL</p>
-								<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-							</div>
-							<div class="card-item">
-								<img src="assets/icon/tri.png" alt="icon 1" class="icon" />
-								<p class="card-title">Voucher XL</p>
-								<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-							</div>
-						</div>
-						<!-- Smartfren -->
-						<div class="container">
-							<div class="card" id="Smartfren">
-								<div class="card-item">
-									<img src="assets/icon/smartfren.png" alt="icon 1" class="icon" />
-									<p class="card-title">Voucher XL</p>
-									<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-								</div>
-								<div class="card-item">
-									<img src="assets/icon/smartfren.png" alt="icon 1" class="icon" />
-									<p class="card-title">Voucher XL</p>
-									<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-								</div>
-								<div class="card-item">
-									<img src="assets/icon/smartfren.png" alt="icon 1" class="icon" />
-									<p class="card-title">Voucher XL</p>
-									<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-								</div>
-							</div>
-							<!-- Telkomsel -->
-							<div class="container">
-								<div class="card" id="Telkomsel">
-									<div class="card-item">
-										<img src="assets/icon/telkomsel.png" alt="icon 1" class="icon" />
-										<p class="card-title">Voucher XL</p>
-										<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-									</div>
-									<div class="card-item">
-										<img src="assets/icon/telkomsel.png" alt="icon 1" class="icon" />
-										<p class="card-title">Voucher XL</p>
-										<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-									</div>
-									<div class="card-item">
-										<img src="assets/icon/telkomsel.png" alt="icon 1" class="icon" />
-										<p class="card-title">Voucher XL</p>
-										<p class="card-description">Kuota Lokal|| Kuota Nasional</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+.logo {
+	margin-right: auto;
+	display: flex;
+	gap: 6px;
+}
+
+.logo-img {
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+}
+
+.logo-title {
+	cursor: pointer;
+	transition: all .5s ease 0s;
+	font-size: 20px;
+	padding: 6px 12px;
+
+}
+
+.logo:hover {
+	color: #FF6A3D;
+	transform: rotate(2deg);
+}
+
+.btn-cta {
+	margin-right: 10px;
+	border: none;
+	font-size: 20px;
+	padding: 6px 12px;
+	background: #FF6A3D;
+	color: #eaeaea;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+nav ul{
+	display: flex;
+	padding: 20px;
+}
+
+li {
+	list-style-type: none;
+	padding: 10px;
+}
+
+li a {
+	transition: all .5s ease 0s;
+	display: inline-block;
+}
+
+li a:hover {
+	color: #FF6A3D;
+	transform: rotate(2deg);
+}
+
+a {
+	color: #eaeaea;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 70px 0;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	text-align: center;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.img-foto {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	max-width: 500px;
+}
+.parallax {
+	background-image: url('assets/foto/tm.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300vh;
+	
+}
+
+.tentang {
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #1A2238;
+	color: #eaeaea;
+	padding: 40px;
+}
+
+.mt-10 {
+	margin-top: 20px;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.card-item {
+	text-align: center;
+	width: 25%;
+	min-height: 200px;
+	max-height: 300px;
+	background: #f7f7f7;
+	color: #222;
+	padding: 24px;
+	box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+}
+
+.card-title {
+	font-size: 18px;
+	font-weight: bolder;
+}
+
+.card-description {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.icon {
+	width: 75px;
+	height: 60px;
+	margin: 10px;
+	padding: 4px;
+}
+
+footer {
+	padding: 20px;
+	text-align: center;
+	background: #1A2238;
+	color: #eaeaea;
+}
+
+@media screen and (max-width: 500px) {
+	.parallax {
+		height: 550vh;
+		
+	}
 
 
-		<footer>
-			<p class="title">&copy; Tambusai Malaya Website 2024</p>
-		</footer>
-		<script>
-			function redirWhatsapp() {
-				window.location.href = "https://wa.me/+62895634812413"
-			}
+	.card {
+		flex-direction: column;
+		gap: 0;
+	}
+	.card-item {
+		width: 100%;
+		opacity: 0.9;
+	}
+	
+	.container {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.intro {
+		margin-top: 20px;
+	}
+	
+	.img-foto {
+		padding: 0;
+	}
+	
+	nav {
+		
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		bottom: 0;
+		width: 100%;
+		background: #1A2238;
+		z-index: 9;
+	}
+	
+	footer {
+		margin-bottom: 70px;
+		margin-top: 70px;
+	}
 
-			function redirCarapesan() {
-				window.location.href = "https://drive.google.com/file/d/19AqawjWyQVQMwyiYsUPaghcHZ2eYlDH_/view?usp=drive_link"
-			}
-		</script>
 
-</body>
 
-</html>
+}
